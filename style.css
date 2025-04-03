@@ -205,6 +205,30 @@ nav svg {
   margin-top: 10px;
 }
 
+.classes-description h2 {
+  font-size: 2.5rem; /* Zwiększenie rozmiaru czcionki */
+  font-family: "Poppins", sans-serif;
+  color: #333; /* Ciemniejszy kolor dla lepszej czytelności */
+  margin-bottom: 0.5rem;
+}
+
+.classes-description h3 {
+  font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5; /* Zwiększenie interlinii dla lepszej czytelności */
+  margin-bottom: 1rem;
+}
+
+.classes-description p {
+  font-size: 1.2rem; /* Rozmiar czcionki dla tekstu */
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px; /* Ustawienie maksymalnej szerokości tekstu, by nie był zbyt szeroki */
+  margin: 0 auto; /* Centrowanie tekstu */
+  padding: 0 1rem; /* Dodanie marginesu, by tekst nie stykał się z brzegiem */
+}
+
 .services-list {
   display: flex;
   justify-content: space-between;
