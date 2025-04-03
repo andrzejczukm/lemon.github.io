@@ -83,6 +83,7 @@ nav svg {
   font-family: "argonite", sans-serif;
   text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
   text-align: center;
+  background-color: ;
 }
 .selling-point h3 {
   font-family: sans-serif;
@@ -182,4 +183,59 @@ nav svg {
   .about h2 {
     text-align: start;
   }
+}
+
+#uslugi {
+  background-color: #f4f4f4;
+}
+
+.classes-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.classes-description h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.classes-description h3 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Odstęp między kolumnami */
+  flex-wrap: wrap; /* Zapewnia, że elementy będą się zawijały na mniejszych ekranach */
+}
+
+.service-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%; /* Każdy element ma 30% szerokości kontenera, więc 3 kolumny */
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }
