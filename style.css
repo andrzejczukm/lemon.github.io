@@ -308,3 +308,11 @@ nav svg {
     font-size: 20px;
   }
 }
+
+html,
+body {
+  overflow-x: hidden; /* ❗ Zapobiega przewijaniu strony w poziomie */
+}
+* {
+  max-width: 100%; /* Zapobiega wykraczaniu elementów poza ekran */
+}
