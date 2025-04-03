@@ -331,6 +331,11 @@ nav svg {
   .classes-description h3 {
     font-size: 20px;
   }
+
+  .service-item {
+    width: 100%; /* Na mniejszych ekranach każda usługa zajmuje całą szerokość */
+    margin-bottom: 20px; /* Przestrzeń między elementami */
+  }
 }
 
 html,
@@ -339,4 +344,22 @@ body {
 }
 * {
   max-width: 100%; /* Zapobiega wykraczaniu elementów poza ekran */
+}
+
+* {
+  box-sizing: border-box; /* Upewnia się, że padding i border nie wpływają na szerokość elementów */
+}
+
+img,
+video {
+  max-width: 100%; /* Upewnia się, że obrazy i filmy nie wychodzą poza ekran */
+  height: auto; /* Zachowuje proporcje */
+}
+
+section,
+.container,
+.classes-description,
+.services-list {
+  width: 100%;
+  max-width: 100%;
 }
