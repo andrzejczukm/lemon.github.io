@@ -341,4 +341,5 @@ nav svg {
 html,
 body {
   overflow-x: hidden; /* ❗ Zapobiega przewijaniu strony w poziomie */
+  position: relative;
 }
