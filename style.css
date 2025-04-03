@@ -12,7 +12,7 @@ html {
 :root {
   --main-color: #28829e;
   --secondary-color: white;
-  --black-color:black;
+  --black-color: black;
 }
 
 @font-face {
@@ -124,8 +124,7 @@ nav svg {
 }
 
 .classes {
-  color: var(--black-color
-);
+  color: var(--black-color);
   text-align: center;
   font-family: "argonite", sans-serif;
 }
@@ -150,8 +149,7 @@ nav svg {
 }
 
 .about {
-  color: var(--black-color
-);
+  color: var(--black-color);
 }
 .about h2 {
   font-family: "argonite", sans-serif;
@@ -290,4 +288,23 @@ nav svg {
   background: #6a8e9a;
   color: var(--main-color);
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .services-list {
+    flex-direction: column; /* ❗ Zmieniam układ z poziomego na pionowy */
+    align-items: center; /* ❗ Wycentrowanie usług */
+  }
+
+  .service-item {
+    width: 90%; /* ❗ Każda usługa zajmuje większość szerokości ekranu */
+  }
+
+  .classes-description h2 {
+    font-size: 28px; /* ❗ Mniejsze nagłówki dla lepszej czytelności */
+  }
+
+  .classes-description h3 {
+    font-size: 20px;
+  }
 }

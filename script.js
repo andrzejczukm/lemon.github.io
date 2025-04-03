@@ -51,10 +51,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault(); // Zatrzymaj domyślną akcję
 
-    // Przewiń płynnie do docelowego elementu
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      // 🔥 Zaktualizowanie URL w pasku adresu
+      history.pushState(null, null, this.getAttribute("href"));
+    }
   });
 });
